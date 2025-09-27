@@ -1,4 +1,4 @@
-def binary_complement(binary_string: str) -> str:
+def binary_complement(binary_string):
     result = []
     for ch in binary_string:
         if ch == "0":
@@ -6,10 +6,10 @@ def binary_complement(binary_string: str) -> str:
         elif ch == "1":
             result.append("0")
         else:
-
-            result.append(ch)
+            result.append(ch) 
     return "".join(result)
+
 if __name__ == "__main__":
-    user_input = input("Enter a binary string: ")
-    output = binary_complement(user_input)
+    myinput = input("Enter a binary string: ")
+    output = binary_complement(myinput)
     print(f"Complement: {output}")
