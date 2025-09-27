@@ -10,7 +10,7 @@ digit_to_word = {
     '8': 'eight',
     '9': 'nine'
 }
-def digit_to_word_fst(input_string):
+def digit_to_word(input_string):
     output = []
     for ch in input_string:
         if ch in digit_to_word:      
@@ -21,5 +21,5 @@ def digit_to_word_fst(input_string):
     return " ".join(output)
 
 if __name__ == "__main__":
-    user_input = input("Enter a number or a string with digits: ")
-    print("Output:", digit_to_word_fst(user_input))
+    myinput = input("Enter a number or a string with digits: ")
+    print("Output:", digit_to_word_fst(myinput))
